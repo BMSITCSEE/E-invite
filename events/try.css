@@ -1,0 +1,51 @@
+font-family: "Dancing Script", cursive;
+font-optical-sizing: auto;
+font-weight: 10px;
+font-style: oblique;
+
+
+
+<div class="desc3"><h4><pre>
+        <img src="./des1.png"alt="img"height=100px width="200px">
+        "हल्दी की महक से महक उठे हैं सपने हमारे,
+           आपकी हंसी से सजेगी ये शाम हमारे।
+         आइए और दीजिए अपने प्यार भरे आशीर्वाद,
+         शुरू हो रही है ज़िन्दगी की नई बहार हमारे।"
+        <img src="./des1.png"alt="img"height=100px width="200px">
+        </pre></h4>
+     </div>
+
+
+     <div class="desc3"><h4><pre>
+        <img src="./des1.png"alt="img"height=100px width="200px">  
+        "संगीत की रात है, नृत्य और गाने की बारात है,
+           हर धड़कन में बसी है खुशी की बरसात है।
+           आइए मिलकर बनाएं ये खास पल यादगार,
+        बांध लें रिश्तों को नए सजावट की तरह अपने प्यार।"
+        <img src="./des1.png"alt="img"height=100px width="200px">
+        </pre></h4>
+        </div>
+
+        border-radius: 12%;
+        border-radius: 12% ;
+        background-color: rgb(95, 26, 62);
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Margarine&family=Tiny5&display=swap" rel="stylesheet">
+Tiny5: CSS class
+
+.tiny5-regular {
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+Margarine: CSS class
+
+.margarine-regular {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+        

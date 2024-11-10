@@ -1,0 +1,367 @@
+html,body{
+    height: 115%;
+    width:100%;
+    
+}
+.topbarleft
+{
+    display:flex;
+    flex-direction: row;
+   
+   
+}
+[type=button]
+{
+    margin-left:8px;
+    margin-right:8px;
+    border-radius:50px;
+    padding:12px;
+    background-color: rgb(234, 213, 168);
+    border:1.5px solid rgb(242, 207, 170);
+}
+[type=button]:hover
+{
+    background-color:#e1c49b ;
+    padding:13px;
+    margin-left:9px;
+    margin-right:9px;
+    color: rgb(34, 32, 31);
+    border:2px solid rgb(29, 28, 28);
+    box-shadow:  0 5px 15px rgba(200, 100, 120, 7);
+    transition-duration:0.15s;
+    
+
+}
+.topbarright
+{
+    background-color:rgb(56, 29, 56);
+    position: absolute;
+    right:2%;
+    margin-bottom:0px;   
+    padding-bottom:0px;
+    height:45px;
+}
+
+.topbar
+{
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(53, 3, 26);
+    margin:0;
+    padding:15px;
+}
+
+body{ 
+    margin:0;
+    font-family: sans-serif;
+    color:black ;
+    overflow-x: hidden;
+    
+  }
+  html{
+    
+    background-color:rgb(239, 232, 177);
+
+  }
+  .container {
+    position: relative;
+    bottom:15%;
+    
+  
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+    
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 50s infinite forwards linear;
+    
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 20px 2px rgba(0,0,0,0.5);
+    display: flex;
+  }
+  
+
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("./im1.jpeg");
+    transform: rotateY(  0deg) translateZ(400px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("./riya1.jpeg");
+      transform: rotateY( 40deg) translateZ(400px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("./im3.jpeg");
+    transform: rotateY( 80deg) translateZ(400px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("./im4.jpeg");
+    transform: rotateY(120deg) translateZ(400px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("./im5.jpeg");
+   transform: rotateY(160deg) translateZ(400px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("./im6.jpeg");
+   transform: rotateY(200deg) translateZ(400px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("im7.jpeg");
+   transform: rotateY(240deg) translateZ(400px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("im8.jpeg");
+    transform: rotateY(280deg) translateZ(400px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("teka1.jpeg");
+    transform: rotateY(320deg) translateZ(400px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+body{
+    display:flex;
+    flex-direction: column;
+}
+.contentswithcar{
+    flex-grow: 20%;
+    height:450px;
+    border:2px solid black;
+    box-shadow:  0 5px 15px rgba(200, 100, 120, 7);
+}
+
+ .contentswitoutcar
+  {
+    position: relative;
+    top:0.01%;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 20%;
+  }
+.desc1{
+    font-size: 17.5px;
+    position: relative;
+    right:120px;
+    bottom:20px;
+    text-align: justify;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+}
+.desc2{
+    font-size: 17.5px;
+    position:relative;
+    right:85px;
+    bottom:55px;
+    text-align: justify;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+
+
+}
+.img2{
+    position: relative;
+    left:12%;
+    padding:20px;
+    height: 300px;
+    margin:10px;
+    border: 5px solid rgb(246, 242, 242); 
+}
+.img1{
+    padding: 20px;
+    height: 300px;
+    
+    margin:10px;
+    border: 5px solid rgb(246, 242, 242);
+    position: relative;
+    right:12%;
+}
+/*#e68a1a dada
+#470f0c didi
+*/
+.dada{
+    display:flex;
+    flex-direction: row;
+    background-color:#e4993d;
+   
+    border-radius: 50px;
+    border:5px;
+    width:1060px;
+    position: relative;
+    top:10%;
+    left:5%;
+}
+.didi{
+    display:flex;
+    flex-direction: row-reverse;
+    background-color:#50201e;
+    
+    border-radius: 50px;
+    border:5px;
+    margin-bottom: 5px;
+    width:1060px;
+    
+  position: relative;
+  top:5%;
+  left:5%;
+}
+.kname{
+    font-size: 30px;
+    position:relative;
+    right:14%;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.sname{
+    font-size: 30px;
+    position:relative;
+    right:20%;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.descs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:3%;
+    height:500px;
+    width:600px;
+    color:antiquewhite;
+
+}
+.desck{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:10%;
+    height:500px;
+    width:600px;
+    color:antiquewhite;
+}
+.black1{
+   
+  height:400px;
+  width:1200px;
+  position: relative;
+  bottom:18%;
+  background-color: rgb(239, 232, 177);
+  z-index: -30;
+  background-image: url(./ourstorybgbox.png);
+
+}
+/*text animations*/
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* Start and end positions */
+  }
+  40% {
+    transform: translateY(-30px); /* Bounce up */
+  }
+  60% {
+    transform: translateY(-15px); /* Bounce down */
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 30; 
+    color:rgb(231, 221, 149);
+  }
+  25%{
+    opacity:40;
+    color:rgb(170, 170, 166);
+
+  }
+  50%{
+    opacity: 80;
+    color:rgb(122, 122, 119);
+
+  }
+  
+  75%{
+    opacity:90 ;
+    color:rgb(62, 60, 60);
+  }
+  
+  100% {
+    opacity: 1; /* Fully opaque */
+    color:black;
+  }
+}
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*PHOTO FRAME*/
+.photo-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path/to/frame-image.png'); /* Replace with your frame image */
+  background-size: cover;
+  z-index: 1; /* Ensure the frame is above the photo */
+}
+
+.kname{
+ 
+  animation: fadeIn 3s ease infinite ;
+  animation-delay: 0ms;
+}
+.sname{
+  
+  animation: fadeIn 3s ease infinite;
+  animation-delay: 0ms;
+}
+.desc1{
+  animation: moveRightToLeft 5s linear 1;
+}
+.desc2{
+   
+  animation: moveLeftToRight 5s linear 1;
+}
+
+
+
+
+
+   
+
+
+

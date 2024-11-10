@@ -1,0 +1,121 @@
+.topbarright
+{
+    background-color:rgb(56, 29, 56);
+    position: absolute;
+    right:2%;
+    margin-bottom:0px;   
+    padding-bottom:0px;
+    height:45px;
+}
+
+.topbar
+{
+    display:flex;
+    flex-direction:row;
+   
+    
+    margin:0;
+    padding:15px;
+}
+.topbarleft
+{
+    display:flex;
+    flex-direction: row;
+   
+   
+}
+[type=button]
+{
+    margin-left:8px;
+    margin-right:8px;
+    border-radius:5px;
+    background-image:none;
+    padding:12px;
+    border:0 ;
+    /*making button trasparent*/
+    background-color: transparent;
+    color: white; /* Set text color to white */
+    outline: none; /* Remove default outline */
+    box-shadow: none; /* Remove any shadow */
+    cursor: pointer; /* Add pointer on hover for better UX */
+   
+   /* box-shadow:  0 5px 5px rgba(0, 77, 77, 77);*/
+   
+    
+   
+}
+[type=button]:hover
+{
+    background-color: none;
+    padding:13px;
+    margin-left:9px;
+    margin-right:9px;
+    color:white;
+    border:2px solid white;
+    /*box-shadow:  0 5px 15px rgba(208, 251, 216, 0.5);*/
+    transition-duration:0.15s;
+    /*background: rgba(199, 243, 200, 0.924);*/
+
+}
+body{
+   
+    /*background-blend-mode: luminosity ;*/
+    background-image: url(./homebg2.jpeg);
+   /* backdrop-filter: blur(0.5px);*/
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:70% 30%;
+    padding:3px;
+    margin:0px;
+    overflow-x: hidden;
+    /*overflow-y: scroll;*/
+}
+.midpageline
+{
+    text-align: center;
+    position: relative;
+    top:100px;
+}
+.quote h3
+{
+    position:relative;
+    bottom:0.5%; 
+    color:white;
+
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 25px;
+   
+
+   
+}
+.name h1
+{
+    position:relative;
+    bottom:0.5%; 
+    color:white;
+
+    font-family: "Cutive Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 30px;
+}
+h3{
+    padding: 0%;
+    margin: 0%;
+}
+.name
+{
+    position: relative;
+    bottom:13px;
+
+}
+/* line-height: 30px;
+    text-align: justify;
+    font-size: 20px;
+    color:rgb(249, 241, 182);*/
+
+  

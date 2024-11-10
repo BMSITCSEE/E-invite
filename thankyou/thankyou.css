@@ -1,0 +1,102 @@
+body{
+    background-image: url('./thankyoubg.jpeg ');
+    padding: 0;
+    margin: 0;
+   background-size: cover;
+    background-position:70% 30%;
+    background-repeat: no-repeat; 
+    text-align:center;
+}
+.topbarleft
+{
+    display:flex;
+    flex-direction: row;  
+}
+[type=button]
+{
+    margin-left:8px;
+    margin-right:8px;
+    padding:12px;
+    border: 0;
+    border-radius: 5px;
+     /*making button trasparent*/
+     background-color: transparent;
+     color: white; /* Set text color to white */
+     outline: none; /* Remove default outline */
+     box-shadow: none; /* Remove any shadow */
+     cursor: pointer; /* Add pointer on hover for better UX */
+}
+[type=button]:hover
+{
+    background: #fff; 
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+    padding:13px;
+    margin-left:9px;
+    margin-right:9px;
+    
+    border:2px solid rgb(29, 28, 28);
+    box-shadow:  0 5px 5px rgba(0, 77, 77, 77);
+    transition-duration:0.15s;
+    
+
+}
+.thankq{
+    overflow-x:hidden;
+    color:rgb(1, 11, 11);
+    
+}
+
+
+.topbarright
+{
+   
+    position: absolute;
+    right:2%;
+    margin-bottom:0px;   
+    padding-bottom:0px;
+}
+
+.topbar
+{
+    display:flex;
+    flex-direction:row;
+   
+   
+    margin:0;
+    padding:15px;
+}
+.bottom{
+    text-align: center;
+}
+
+
+
+
+  .playfair-display-sc-black {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    color:rgb(17, 16, 63);
+  }
+ 
+
+.playfair-display-sc-black-itali {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(4, 15, 22)
+}
+  
+  
+.playfair-display-sc-black-italic {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size:25px ;
+
+  }
