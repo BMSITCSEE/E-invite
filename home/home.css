@@ -1,25 +1,30 @@
-/* Add viewport meta tag in HTML file */
-/* (Already included in your HTML, so you're all set) */
+body {
+    background-image: url(./homebg2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3px;
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 100vh; /* Ensures background covers the full viewport height */
+}
 
 .topbarright {
     background-color: rgb(56, 29, 56);
     position: absolute;
     right: 2%;
-    margin-bottom: 0;
-    padding-bottom: 0;
     height: 45px;
 }
 
 .topbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Ensures space between left and right sections */
+    justify-content: space-between;
     padding: 15px;
 }
 
 .topbarleft {
     display: flex;
-    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
     flex-direction: row;
 }
 
@@ -32,23 +37,13 @@
     outline: none;
     box-shadow: none;
     cursor: pointer;
-    font-size: 16px; /* Adjusted for better readability on smaller screens */
+    font-size: 16px;
 }
 
 [type=button]:hover {
     color: white;
     border: 2px solid white;
     transition-duration: 0.15s;
-}
-
-body {
-    background-image: url(./homebg2.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 3px;
-    margin: 0;
-    overflow-x: hidden;
 }
 
 .midpageline {
@@ -60,14 +55,14 @@ body {
 .quote h3 {
     color: white;
     font-family: "Cutive Mono", monospace;
-    font-size: 5vw; /* Responsive font size */
+    font-size: 25px;
     font-weight: 400;
 }
 
 .name h1 {
     color: white;
     font-family: "Cutive Mono", monospace;
-    font-size: 6vw; /* Responsive font size */
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -76,35 +71,45 @@ body {
     bottom: 13px;
 }
 
-/* Media queries for mobile and tablet adjustments */
+/* Responsive Adjustments for Smaller Devices */
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .topbar {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         align-items: center;
     }
     .topbarleft {
+        flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 10px;
     }
     .midpageline {
-        top: 50px; /* Adjust for smaller screens */
+        top: 50px;
     }
     [type=button] {
-        font-size: 14px; /* Smaller text for buttons */
+        font-size: 14px;
+    }
+    .quote h3 {
+        font-size: 4vw;
+    }
+    .name h1 {
+        font-size: 5vw;
     }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-position: center center;
+    }
     .topbarright {
-        position: static; /* Places logo inline */
+        position: static;
         margin-bottom: 10px;
         text-align: center;
     }
     .quote h3, .name h1 {
-        font-size: 8vw; /* Larger, readable text on small screens */
+        font-size: 6vw;
     }
     .topbar {
         flex-direction: column;
