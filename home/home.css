@@ -1,121 +1,118 @@
-.topbarright
-{
-    background-color:rgb(56, 29, 56);
+/* Add viewport meta tag in HTML file */
+/* (Already included in your HTML, so you're all set) */
+
+.topbarright {
+    background-color: rgb(56, 29, 56);
     position: absolute;
-    right:2%;
-    margin-bottom:0px;   
-    padding-bottom:0px;
-    height:45px;
+    right: 2%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 45px;
 }
 
-.topbar
-{
-    display:flex;
-    flex-direction:row;
-   
-    
-    margin:0;
-    padding:15px;
-}
-.topbarleft
-{
-    display:flex;
+.topbar {
+    display: flex;
     flex-direction: row;
-   
-   
+    justify-content: space-between; /* Ensures space between left and right sections */
+    padding: 15px;
 }
-[type=button]
-{
-    margin-left:8px;
-    margin-right:8px;
-    border-radius:5px;
-    background-image:none;
-    padding:12px;
-    border:0 ;
-    /*making button trasparent*/
-    background-color: transparent;
-    color: white; /* Set text color to white */
-    outline: none; /* Remove default outline */
-    box-shadow: none; /* Remove any shadow */
-    cursor: pointer; /* Add pointer on hover for better UX */
-   
-   /* box-shadow:  0 5px 5px rgba(0, 77, 77, 77);*/
-   
-    
-   
-}
-[type=button]:hover
-{
-    background-color: none;
-    padding:13px;
-    margin-left:9px;
-    margin-right:9px;
-    color:white;
-    border:2px solid white;
-    /*box-shadow:  0 5px 15px rgba(208, 251, 216, 0.5);*/
-    transition-duration:0.15s;
-    /*background: rgba(199, 243, 200, 0.924);*/
 
+.topbarleft {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    flex-direction: row;
 }
-body{
-   
-    /*background-blend-mode: luminosity ;*/
+
+[type=button] {
+    margin: 8px;
+    border-radius: 5px;
+    padding: 12px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjusted for better readability on smaller screens */
+}
+
+[type=button]:hover {
+    color: white;
+    border: 2px solid white;
+    transition-duration: 0.15s;
+}
+
+body {
     background-image: url(./homebg2.jpeg);
-   /* backdrop-filter: blur(0.5px);*/
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position:70% 30%;
-    padding:3px;
-    margin:0px;
+    background-position: center;
+    padding: 3px;
+    margin: 0;
     overflow-x: hidden;
-    /*overflow-y: scroll;*/
 }
-.midpageline
-{
+
+.midpageline {
     text-align: center;
     position: relative;
-    top:100px;
+    top: 100px;
 }
-.quote h3
-{
-    position:relative;
-    bottom:0.5%; 
-    color:white;
 
+.quote h3 {
+    color: white;
     font-family: "Cutive Mono", monospace;
+    font-size: 5vw; /* Responsive font size */
     font-weight: 400;
-    font-style: normal;
-    font-optical-sizing: auto;
-    font-size: 25px;
-   
-
-   
 }
-.name h1
-{
-    position:relative;
-    bottom:0.5%; 
-    color:white;
 
+.name h1 {
+    color: white;
     font-family: "Cutive Mono", monospace;
+    font-size: 6vw; /* Responsive font size */
     font-weight: 600;
-    font-style: normal;
-    font-optical-sizing: auto;
-    font-size: 30px;
 }
-h3{
-    padding: 0%;
-    margin: 0%;
-}
-.name
-{
+
+.name {
     position: relative;
-    bottom:13px;
-
+    bottom: 13px;
 }
-/* line-height: 30px;
-    text-align: justify;
-    font-size: 20px;
-    color:rgb(249, 241, 182);*/
 
-  
+/* Media queries for mobile and tablet adjustments */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+    .topbarleft {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .midpageline {
+        top: 50px; /* Adjust for smaller screens */
+    }
+    [type=button] {
+        font-size: 14px; /* Smaller text for buttons */
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .topbarright {
+        position: static; /* Places logo inline */
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .quote h3, .name h1 {
+        font-size: 8vw; /* Larger, readable text on small screens */
+    }
+    .topbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    .topbarleft {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
