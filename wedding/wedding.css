@@ -35,7 +35,7 @@
     
     /*making button trasparent*/
     background-color: transparent;
-    color: white; /* Set text color to white */
+    color:  rgb(53, 3, 26); /* Set text color  */
     outline: none; /* Remove default outline */
     box-shadow: none; /* Remove any shadow */
     cursor: pointer; /* Add pointer on hover for better UX */
@@ -78,11 +78,17 @@ body{
     position: relative;
     left:200px;
     bottom:50px;
-    padding:10px 10px 0 0;
+    padding:10px 10px 10px 10px;
     margin:10px;
-   
-    border:6px solid rgb(81, 25, 32);
-    
+    border:2px solid rgb(103, 94, 8)
+    ;
+    background-color:rgb(237, 233, 194) ;
 
+}/*rgb(11, 65, 42)*/
+.cardsouter
+{
+    height:850px;
+    width:850px;
+    padding-top: 10px;
 }
   

@@ -35,7 +35,7 @@
     /*border:1.5px solid rgb(234, 216, 216);*/
    /*making background transparent*/
     background-color: transparent;
-    color: rgb(53, 3, 26);; /* Set text color to white */
+    color: rgb(53, 3, 26); /* Set text color to white */
     outline: none; /* Remove default outline */
     box-shadow: none; /* Remove any shadow */
     cursor: pointer; /* Add pointer on hover for better UX */
