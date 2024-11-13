@@ -2,9 +2,10 @@ body{
    
     background-blend-mode: luminosity ;
     background-color: rgb(249, 241, 182);
+    
     backdrop-filter: blur(1px);
     background-repeat:no-repeat;
-    background-position:center ;
+    background-position: center;
     padding:3px;
     margin:0px;
     overflow-x: hidden;
@@ -152,10 +153,17 @@ width:450px;
 {
     margin-left:8px;
     margin-right:8px;
-    border-radius:50px;
+    border-radius:5px;
     padding:12px;
-    background-color: rgb(234, 213, 168);
-    border:1.5px solid rgb(234, 216, 216);
+    border:0;
+   /* background-color: rgb(234, 213, 168);*/
+   /* border:1.5px solid rgb(234, 216, 216);*/
+     /*making button trasparent*/
+     background-color: transparent;
+     color: rgb(41, 10, 10); /* Set text color to white */
+     outline: none; /* Remove default outline */
+     box-shadow: none; /* Remove any shadow */
+     cursor: pointer; /* Add pointer on hover for better UX */
 }
 [type=button]:hover
 {
@@ -184,8 +192,6 @@ width:450px;
 {
     display:flex;
     flex-direction:row;
-   
-    background-color: rgb(53, 3, 26);
     margin:0;
     padding:15px;
 }
@@ -202,4 +208,9 @@ width:450px;
          url('./font1.pdf') format('svg');
     font-weight: normal; 
     font-style: normal;
+}
+/*<div class="tophead"><h1>OTHER EVENTS😄</h1></div>*/
+.line
+{
+    background-color:black;
 }

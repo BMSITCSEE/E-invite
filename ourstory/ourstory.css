@@ -14,10 +14,18 @@ html,body{
 {
     margin-left:8px;
     margin-right:8px;
-    border-radius:50px;
+    border-radius:5px;
     padding:12px;
-    background-color: rgb(234, 213, 168);
-    border:1.5px solid rgb(242, 207, 170);
+    border:0;
+    /*background-color: rgb(234, 213, 168);
+    border:1.5px solid rgb(242, 207, 170);*/
+     /*making button trasparent*/
+     background-color: transparent;
+     color: rgb(41, 10, 10); /* Set text color to white */
+     outline: none; /* Remove default outline */
+     box-shadow: none; /* Remove any shadow */
+     cursor: pointer; /* Add pointer on hover for better UX */
+
 }
 [type=button]:hover
 {
@@ -46,7 +54,7 @@ html,body{
 {
     display:flex;
     flex-direction:row;
-    background-color:rgb(53, 3, 26);
+   
     margin:0;
     padding:15px;
 }
@@ -100,7 +108,7 @@ body{
     background-image: url("./im1.jpeg");
     transform: rotateY(  0deg) translateZ(400px); }
   .carousel__face:nth-child(2) { 
-    background-image: url("./riya1.jpeg");
+    background-image: url("./im2.jpeg");
       transform: rotateY( 40deg) translateZ(400px); }
   .carousel__face:nth-child(3) {
     background-image: url("./im3.jpeg");
@@ -115,13 +123,13 @@ body{
     background-image: url("./im6.jpeg");
    transform: rotateY(200deg) translateZ(400px); }
   .carousel__face:nth-child(7) { 
-    background-image: url("im7.jpeg");
+    background-image: url("./im7.jpeg");
    transform: rotateY(240deg) translateZ(400px); }
   .carousel__face:nth-child(8) {
-    background-image: url("im8.jpeg");
+    background-image: url("./imm8.jpeg");
     transform: rotateY(280deg) translateZ(400px); }
   .carousel__face:nth-child(9) {
-    background-image: url("teka1.jpeg");
+    background-image: url("./im9.jpeg");
     transform: rotateY(320deg) translateZ(400px); }
   
   
@@ -180,16 +188,18 @@ body{
 }
 .img2{
     position: relative;
+    top:2%;
     left:12%;
     padding:20px;
-    height: 300px;
+    height: 250px;
+    
     margin:10px;
     border: 5px solid rgb(246, 242, 242); 
 }
 .img1{
     padding: 20px;
     height: 300px;
-    
+ 
     margin:10px;
     border: 5px solid rgb(246, 242, 242);
     position: relative;

@@ -1,8 +1,8 @@
 body {
-    background-image: url(./homebg2.jpeg);
+    background-image: url(./homebg.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    background-position: 10% 90%;
     padding: 3px;
     margin: 0;
     overflow-x: hidden;
@@ -34,16 +34,27 @@ body {
     padding: 12px;
     background-color: transparent;
     color: white;
+    border:0;
     outline: none;
-    box-shadow: none;
     cursor: pointer;
-    font-size: 16px;
+   
 }
 
 [type=button]:hover {
     color: white;
-    border: 2px solid white;
+    
     transition-duration: 0.15s;
+    background: #fff; 
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+      padding:13px;
+      margin-left:9px;
+      margin-right:9px;
+      
+      border:2px solid rgb(9, 9, 9);
+      box-shadow:  5px 5px 5px rgba(70, 70, 77, 77);
+      transition-duration:0.15s;
+      
 }
 
 .midpageline {
@@ -55,8 +66,14 @@ body {
 .quote h3 {
     color: white;
     font-family: "Cutive Mono", monospace;
-    font-size: 25px;
+    font-size: 27px;
+    font-weight: 500;
+   /* font-family: "Lora", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+    font-size:25px ;*/
+    color:rgb(236, 240, 242)
 }
 
 .name h1 {
