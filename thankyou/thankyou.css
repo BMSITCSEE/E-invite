@@ -100,3 +100,11 @@ body{
     font-size:25px ;
 
   }
+  .adi
+  {
+    color:rgb(17, 16, 63);
+    position: relative;
+    left:40%;
+    top:120px;
+    font-size: 22px;;
+  }
