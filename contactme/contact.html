@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/E-invite/contactme/contact.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-    <script src="/E-invite/contactme/contact.js"></script>
+
+
+    <script src="/E-invite/contactme/contact.js" defer></script>
 </head>
 <body>
     <section class="topbar">
@@ -95,15 +98,17 @@ PINCODE:560064</pre></h3>
 </section>
 <section class="sendmesg">
     <div>
-       
-        <label class="name" >Name</label>
-        <input placeholder="Enter Your Name" type="text"><br><br>
-        <label class="name">E-mail:</label>
-        <input placeholder="Enter Your E-mail"type="text"><br><br>
-        <label class="name">Type Your Message</label>
-        <input placeholder="Type here..." type="text"><br><br>
-        <button type="button">SEND</button>
-   
+        <label for="name" class="name">Name</label>
+        <input id="name" placeholder="Enter Your Name" type="text"><br><br>
+        
+        <label for="email" class="name">E-mail</label>
+        <input id="email" placeholder="Enter Your E-mail" type="text"><br><br>
+        
+        <label for="message" class="name">Type Your Message</label>
+        <input id="message" placeholder="Type here..." type="text"><br><br>
+        
+        <button type="button" id="sendBtn">SEND</button>
+
     </div>
 </section>
 </section>
