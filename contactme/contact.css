@@ -133,6 +133,10 @@ button{
     
 
 }
+p
+{
+text-align: center;
+}
 
 /* Media Queries for Responsiveness */
 
@@ -166,9 +170,11 @@ button{
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+    /* Prevent horizontal scrolling */
     body {
-        padding: 5px;
-        margin: 5px;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden; /* Disable horizontal scrolling */
         background-position: center;
     }
 
@@ -180,14 +186,9 @@ button{
 
     .address, .sendmesg {
         position: relative;
-        left: 0;
-        right: 0;
         width: 90%; /* Adjust width to fit smaller screens */
         margin: 10px 0;
-    }
-
-    .address div, .sendmesg div {
-        text-align: center;
+        text-align: center; /* Center-align the text */
     }
 
     .icon {
@@ -198,8 +199,9 @@ button{
         padding: 20px;
     }
 
-    input {
-        width: 100%; /* Ensure inputs adjust to the container width */
+    input, textarea {
+        width: 100%; /* Ensure inputs and textareas adjust to the container width */
+        box-sizing: border-box; /* Prevent inputs from overflowing */
     }
 
     button {
@@ -207,12 +209,24 @@ button{
         margin-top: 10px;
     }
 
+    /* Navigation Bar Adjustments */
     .topbar {
-        flex-wrap: wrap; /* Allow menu items to stack */
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap; /* Allow menu items to stack if needed */
+        justify-content: center; /* Center-align the menu items */
+        padding: 10px;
+        gap: 5px; /* Add space between menu items */
     }
 
     .topbarleft .butt {
         margin: 5px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 5px 10px; /* Add padding for touch accessibility */
+        text-align: center;
+    }
+
+    /* Prevent overall page overflow */
+    html, body {
+        width: 100%; /* Ensure the body fits the viewport width */
     }
 }
