@@ -165,10 +165,11 @@ button{
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
-        padding: 0;
-        margin: 0;
+        padding: 5px;
+        margin: 5px;
+        background-position: center;
     }
 
     .flex {
@@ -177,35 +178,41 @@ button{
         height: auto;
     }
 
-    .address {
+    .address, .sendmesg {
+        position: relative;
         left: 0;
-        grid-template-columns: 40px auto;
-        grid-column-gap: 10px;
-        top: 0;
-    }
-
-    .sendmesg {
-        width: 95%;
-        height: auto;
-        padding: 10px;
-        margin-top: 20px;
         right: 0;
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin: 10px 0;
     }
 
-    .head {
-        left: 20%;
-    }
-
-    input {
-        padding: 10px 15px;
-    }
-
-    button {
-        padding: 8px 15px;
+    .address div, .sendmesg div {
+        text-align: center;
     }
 
     .icon {
-        width: 40px;
-        height: 40px;
+        margin: 0 auto;
+    }
+
+    .sendmesg {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%; /* Ensure inputs adjust to the container width */
+    }
+
+    button {
+        width: 100%; /* Adjust button size to fit input fields */
+        margin-top: 10px;
+    }
+
+    .topbar {
+        flex-wrap: wrap; /* Allow menu items to stack */
+        justify-content: center;
+    }
+
+    .topbarleft .butt {
+        margin: 5px;
     }
 }
