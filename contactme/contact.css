@@ -1,8 +1,8 @@
 body{
-    background-image: url(./contactmebg7.png );
+    background-image: url(./contactmebg2.png );
     color:white;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    background-position: 90% 10%;
     opacity: 1;
     backdrop-filter:blur(0.5px);
     padding:5px;
@@ -13,11 +13,11 @@ body{
 
 .flex
 {
-    height:600px;
+    height:400px;
     display:flex ;
     flex-direction: row;
     justify-content:space-between;
-    background-image: url(./contactmebg2.png );
+    
 }
 .address
 {
@@ -38,7 +38,7 @@ body{
     padding:50px;
     position:relative;
     right:5%;
-    top:15%;
+    top:9%;
     
 }
 
@@ -126,7 +126,7 @@ button{
     padding:13px;
     margin-left:9px;
     margin-right:9px;
-    color: rgb(247, 251, 248);
+    color: rgb(5, 5, 5);
     border:2px solid rgb(6, 23, 10);
     box-shadow:  0 5px 15px rgba(6, 23, 10, 7);
     transition-duration:0.15s;

@@ -53,6 +53,11 @@
     
 
 }
+
+  
+ 
+ 
+
 body{
     background-color:rgb(239, 232, 177) ;
     background-blend-mode: luminosity ;
@@ -85,10 +90,43 @@ body{
     background-color:rgb(237, 233, 194) ;
 
 }/*rgb(11, 65, 42)*/
-.cardsouter
-{
-    height:850px;
-    width:850px;
-    padding-top: 10px;
-}
+/*CLOCK*/
+.countdown-container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+  }
   
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    left:20%;
+  }
+  
+  #clock {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .time-box {
+    text-align: center;
+  }
+  
+  .time-box span {
+    display: block;
+    font-size: 2em;
+  }
+  
+  #clock span:first-child {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffe600;
+  }
+  .weddingclockcount
+  {
+    position: relative;
+    left:25%;
+  }

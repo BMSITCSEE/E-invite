@@ -1,5 +1,5 @@
 body {
-    background-image: url(./homebg.jpeg);
+    background-image: url(./homebg2.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: 10% 90%;
@@ -45,14 +45,14 @@ body {
     
     transition-duration: 0.15s;
     background: #fff; 
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 251, 251, 0.421);
     color: #000;
       padding:13px;
       margin-left:9px;
       margin-right:9px;
       
       border:2px solid rgb(9, 9, 9);
-      box-shadow:  5px 5px 5px rgba(70, 70, 77, 77);
+      box-shadow:   1px 1px 2px 1px rgba(200, 200, 200, 200);
       transition-duration:0.15s;
       
 }

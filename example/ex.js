@@ -1,3 +1,4 @@
+
 const imageUpload = document.getElementById('imageUpload');
 const imagePreview = document.getElementById('imagePreview');
 const viewButton = document.getElementById('viewButton');

@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     
-    <link rel="stylesheet" href="/wedding/wedding.css">
-    <script src="./wedding.js"></script>
+    <link rel="stylesheet" href="/E-invite/wedding/wedding.css">
+    <script src="/E-invite/wedding/wedding.js"></script>
 </head>
 
 <body>
     <section class="topbar">
-      <section class="topbarleft">
-        <div class="butt">
-            <a href="/E-invite/index.html"><button type="button">HOME</button></a>
+      <section class="topbarleft">-
+        <div class="butt" >
+            <a href="/E-invite/index.html"><button id="home" type="button" onclick="activateButton('home')">HOME</button></a>
         </div>
-        <div class="butt">
-            <a href="/E-invite/ourstory/ourstory.html"><button type="button">OUR STORY</button></a>
+        <div class="butt" >
+            <a href="/E-invite/events/events.html" ><button id="events" type="button" onclick="activateButton('events')">EVENTS</button></a>
         </div>
-        <div class="butt">
-            <a href="/E-invite/events/events.html"><button type="button">EVENTS</button></a>
+        
+        <div class="butt" >
+            <a href="/E-invite/wedding/wedding.html"><button id="wedding" type="button" onclick="activateButton('wedding')">WEDDING</button></a>
         </div>
-        <div class="butt">
-            <a href="/E-invite/wedding/wedding.html"><button type="button">WEDDING</button></a>
+        <div class="butt" >
+            <a href="/E-invite/ourstory/ourstory.html"><button id="ourstory" type="button" onclick="activateButton('ourstory')">OUR STORY</button></a>
         </div>
-        <div class="butt">
-            <a href="/E-invite/contactme/contact.html"><button type="button">CONTACT ME</button></a>
+        <div class="butt" >
+            <a href="/E-invite/gallery/gallery.html"><button id="gallery" type="button" onclick="activateButton('gallery')">GALLERY</button></a>
         </div>
-        <div class="butt">
-            <a href="/E-invite/gallery/gallery.html"><button type="button">GALLERY</button></a>
+        <div class="butt" >
+            <a href="/E-invite/contactme/contact.html"><button id="contactme" type="button" onclick="activateButton('contactme')">CONTACT ME</button></a>
         </div>
-        <div class="butt">
-            <a href="/E-invite/thankyou/thankyou.html"><button type="button">THANK YOU</button></a>
+        <div class="butt" >
+            <a href="/E-invite/thankyou/thankyou.html"><button id="thankyou" type="button" onclick="activateButton('thankyou')">THANK YOU</button></a>
         </div>
     </section>
     
@@ -50,21 +51,41 @@
 <br>
 <br>
 <br>
-    <section class="cardsouter">
         <section class="cards">
         
         </section>
-    </section>
+    
         <section class="contents">
-            <section class="clock">
+            <section class="weddingclockcount">
+              <div class="countdown-container">
+                <h1>Wedding Countdown</h1>
+                <div id="clock">
+                  <div class="time-box">
+                    <span id="days">00</span>
+                    <span>Days</span>
+                  </div>
+                  <div class="time-box">
+                    <span id="hours">00</span>
+                    <span>Hours</span>
+                  </div>
+                  <div class="time-box">
+                    <span id="minutes">00</span>
+                    <span>Minutes</span>
+                  </div>
+                  <div class="time-box">
+                    <span id="seconds">00</span>
+                    <span>Seconds</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+              
+                  <section class="venue">
+
+                  </section>
+
 
         </section>
-        <section class="venue">
-
-        </section>
-
-
-    </section>
 
 </body>
 </html>
