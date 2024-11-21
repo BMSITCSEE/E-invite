@@ -244,18 +244,37 @@ width:450px;
         font-size: 18px;
     }
 }
+/* Mobile Styles */
+@media (max-width: 480px)
+ { 
+    body {
+            background-size: cover;
+            background-position: center center;
+        }
+    
+        .topbarright {
+            position: static;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .topbar {
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+        }
+        .topbarleft {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-@media (max-width: 768px) { /* Mobile Styles */
-    .topbar {
-        flex-direction: column;
-        align-items: center;
+    button {
+        padding: 8px;
+        font-size: 12px;
     }
 
-    .topbarright {
-        position: relative;
-        right: 0;
-        margin-top: 10px;
-    }
+   
+
+    
 
     .content {
         flex-direction: column;
