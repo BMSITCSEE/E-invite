@@ -154,6 +154,45 @@ text-align: center;
 }
 
 @media (max-width: 480px) {
+
+    @media screen and (max-width: 768px) {
+        /* Prevent horizontal scrolling */
+        body {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden; /* Disable horizontal scrolling */
+            background-position: center;
+        }
+    
+        .flex {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+    
+        .address, .sendmesg {
+            position: relative;
+            width: 75%; /* Adjust width to fit smaller screens */
+            margin: 10px 0;
+            text-align: center; /* Center-align the text */
+            
+        }
+    
+        .icon {
+            margin: 0 auto;
+        }
+    
+        .sendmesg {
+            padding: 20px;
+        }
+        .contact
+        {
+            font-size:10px;
+            
+        }
+    
+      
+    /*css*/
     .topbar {
         flex-direction: column;
         align-items: center;
@@ -169,12 +208,13 @@ text-align: center;
         font-size: 12px;
     }
 
-    .sendmesg {
-        padding: 15px;
-    }
+   
 
     input, button {
         font-size: 14px;
+    }
+    p{
+        font-size: 10px;
     }
 }
 
