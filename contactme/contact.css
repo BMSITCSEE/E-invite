@@ -169,64 +169,50 @@ text-align: center;
 }
 
 /* Mobile */
-@media screen and (max-width: 768px) {
-    /* Prevent horizontal scrolling */
-    body {
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden; /* Disable horizontal scrolling */
-        background-position: center;
-    }
-
-    .flex {
+@media (max-width: 1024px) {
+    .topbar {
         flex-direction: column;
         align-items: center;
-        height: auto;
     }
-
-    .address, .sendmesg {
-        position: relative;
-        width: 90%; /* Adjust width to fit smaller screens */
-        margin: 10px 0;
-        text-align: center; /* Center-align the text */
+    .topbarleft {
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    .icon {
-        margin: 0 auto;
+    .midpageline {
+        top: 50px;
     }
-
-    .sendmesg {
-        padding: 20px;
+    [type=button] {
+        font-size: 14px;
     }
-
-    input, textarea {
-        width: 100%; /* Ensure inputs and textareas adjust to the container width */
-        box-sizing: border-box; /* Prevent inputs from overflowing */
+    .quote h3 {
+        font-size: 4vw;
     }
-
-    button {
-        width: 100%; /* Adjust button size to fit input fields */
-        margin-top: 10px;
+    .name h1 {
+        font-size: 5vw;
     }
+}
 
-    /* Navigation Bar Adjustments */
-    .topbar {
-        display: flex;
-        flex-wrap: wrap; /* Allow menu items to stack if needed */
-        justify-content: center; /* Center-align the menu items */
-        padding: 10px;
-        gap: 5px; /* Add space between menu items */
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-position: center center;
     }
-
-    .topbarleft .butt {
-        margin: 5px;
-        font-size: 14px; /* Adjust font size for smaller screens */
-        padding: 5px 10px; /* Add padding for touch accessibility */
+    .topbarright {
+        position: static;
+        margin-bottom: 10px;
         text-align: center;
     }
-
-    /* Prevent overall page overflow */
-    html, body {
-        width: 100%; /* Ensure the body fits the viewport width */
+    .quote h3, .name h1 {
+        font-size: 6vw;
+    }
+    .topbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    .topbarleft {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
