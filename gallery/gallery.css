@@ -222,6 +222,7 @@ button.Downloadbutt:hover {
     body {
         background-size: cover;
         background-position: center center;
+        min-height: 100vh;
     }
     .topbarright {
         position: static;
@@ -239,5 +240,26 @@ button.Downloadbutt:hover {
     .topbarleft {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .gallery {
+        margin: 5px auto;
+        height: auto;
+        background-size: cover;
+    }
+
+    .photos,
+    .videos {
+        width: 100%; /* Full width on mobile */
+        max-width: 150px;
+    }
+
+    .heading {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    button.Viewbutt,
+    button.Downloadbutt {
+        width: 80%;
     }
 }
