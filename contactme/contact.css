@@ -154,16 +154,31 @@ text-align: center;
 }
 
 @media (max-width: 480px) {
-
-    @media screen and (max-width: 768px) {
         /* Prevent horizontal scrolling */
         body {
             padding: 0;
             margin: 0;
             overflow-x: hidden; /* Disable horizontal scrolling */
-            background-position: center;
+            background-size: cover;
+            background-position: center center;
         }
-    
+        
+        .topbarright {
+                position: static;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+         .topbar {
+                flex-direction: column;
+                align-items: center;
+                padding: 5px;
+            }
+         .topbarleft {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        
         .flex {
             flex-direction: column;
             align-items: center;
@@ -173,9 +188,14 @@ text-align: center;
         .address, .sendmesg {
             position: relative;
             width: 75%; /* Adjust width to fit smaller screens */
-            margin: 10px 0;
+            margin: 5px ;
+            padding :0;
             text-align: center; /* Center-align the text */
             
+        }
+        .address{
+            position: relative;
+            right:20px;
         }
     
         .icon {
@@ -191,7 +211,26 @@ text-align: center;
             
         }
     
-      
+        input, textarea {
+            width: 100%; /* Ensure inputs and textareas adjust to the container width */
+            box-sizing: border-box; /* Prevent inputs from overflowing */
+        }
+    
+        button {
+            width: 100%; /* Adjust button size to fit input fields */
+            margin-top: 10px;
+        }
+
+        /* Prevent overall page overflow */
+        html, body {
+            width: 100%; /* Ensure the body fits the viewport width */
+        }
+    
+
+
+
+
+
     /*css*/
     .topbar {
         flex-direction: column;
@@ -214,7 +253,7 @@ text-align: center;
         font-size: 14px;
     }
     p{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
