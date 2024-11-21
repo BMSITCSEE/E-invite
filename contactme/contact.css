@@ -177,7 +177,7 @@ text-align: center;
                 flex-wrap: wrap;
                 justify-content: center;
             }
-        }
+        
         
         .flex {
             flex-direction: column;
@@ -227,33 +227,11 @@ text-align: center;
         }
     
 
-
-
-
-
-    /*css*/
-    .topbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .topbarleft {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    button {
-        padding: 8px;
-        font-size: 12px;
-    }
-
-   
-
-    input, button {
+         input, button {
         font-size: 14px;
-    }
-    p{
+         }
+         p{
         font-size: 12px;
-    }
+         }
 }
 

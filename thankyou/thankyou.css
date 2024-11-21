@@ -99,7 +99,7 @@ body {
 @media (max-width: 480px) {
   body {
       background-size: cover;
-      background-position: center;
+      background-position: left;
       min-height: 100vh; /* Ensure full height on smaller screens */
   }
   .topbarright {
