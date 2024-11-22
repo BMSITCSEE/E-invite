@@ -181,6 +181,9 @@ body{
         background: rgba(0, 0, 0, 0.7); /* Slightly darker background */
         border-radius: 10px; /* Add smooth edges */
     }
+     h1{
+        text-align: center;
+    }
 
     .weddingclockcount {
         text-align: center; /* Ensure centered alignment */
