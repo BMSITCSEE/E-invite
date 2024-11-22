@@ -197,7 +197,7 @@ text-align: center;
         }
         .address{
             position: relative;
-            left:100px;;
+            right:170px;;
             grid-column-gap: 10px;
             margin:0;
             padding:0;
