@@ -98,7 +98,7 @@ body {
 @media (max-width: 480px) {
   body {
       background-size: cover;
-      background-position: calc(100% + 15px) center; 
+      background-position: calc(100% - 25px) right; 
       min-height: 100vh; /* Ensure full height on smaller screens */
       overflow-x: hidden;
   }
