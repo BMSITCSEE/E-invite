@@ -157,7 +157,7 @@ body{
     }
     .cards {
         height: 700px;
-        width: 500px;
+        width: 400px;
        background-image: url(weddingbg3.jpeg);
         background-size: cover; /* Ensure background scales */
         left:0;

@@ -223,6 +223,7 @@ button.Downloadbutt:hover {
         background-size: cover;
         background-position: center center;
         min-height: 100vh;
+        overflow-y: hidden;
     }
     .topbarright {
         position: static;
@@ -237,6 +238,10 @@ button.Downloadbutt:hover {
     .topbarleft {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .gallery{
+        background-image: url(gallerybg6.jpeg);
+        left:0;
     }
 
     
