@@ -244,7 +244,7 @@ button.Downloadbutt:hover {
         position: relative;
         left: 0; /* Shift the gallery to the left side */
         width: 100%; /* Make it responsive to fit the screen width */
-        height: auto; /* Adjust height dynamically */
+        height: 400px; /* Adjust height dynamically */
         background-image: url(gallerybg6.jpeg);
         background-repeat: no-repeat;
         background-size: contain; /* Ensure the background scales properly */
@@ -252,11 +252,28 @@ button.Downloadbutt:hover {
     }
     
     
-      .photos, .videos {
-        width: 90%; /* Adjust width for smaller screens */
-        margin-bottom: 20px;
-      }
-    
+    .photos
+    {
+        display: flex;
+        flex-direction: column;
+        width:50px;
+        height:20px;
+        position: relative;
+        left:30px;
+        top:50px;
+        font-size: 5px;
+    }
+    .videos
+    {
+        display: flex;
+        flex-direction: column;
+        width:50px;
+        height:30px;
+        position: relative;
+        left:30px;
+        top:90px;
+        font-size: 5px;
+    }
       .heading h1 {
         font-size: 20px; /* Adjust heading size */
       }
