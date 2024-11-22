@@ -133,26 +133,70 @@ body{
 
 
   /* Mobile */
+/* Mobile */
 @media (max-width: 480px) {
     body {
         background-size: cover;
         background-position: center center;
-    }
-    .topbarright {
-        position: static;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    .quote h3, .name h1 {
-        font-size: 6vw;
-    }
-    .topbar {
-        flex-direction: column;
-        align-items: center;
         padding: 5px;
     }
+
+    .topbarright {
+        position: absolute; /* Change from static to absolute */
+        right: 2%;
+        margin-bottom: 0px;
+        text-align: right; /* Align to the right */
+    }
+
+    .topbar {
+        flex-direction: row; /* Maintain row direction for consistency */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
     .topbarleft {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap; /* Prevent excessive wrapping */
+        justify-content: flex-start;
+    }
+
+    [type=button] {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        font-size: 3vw; /* Scale button text size for smaller screens */
+    }
+
+    .cards {
+        width: 100%; /* Make the card responsive */
+        height: auto; /* Allow dynamic height */
+        position: relative;
+        left: 0; /* Center the card */
+        bottom: 0;
+        margin: 20px auto; /* Center the card with margin */
+        background-size: contain; /* Ensure proper scaling of the background image */
+    }
+
+    h1 {
+        font-size: 5vw; /* Adjust font size dynamically */
+        text-align: center; /* Center the header text */
+    }
+
+    .quote h3, .name h1 {
+        font-size: 4.5vw; /* Scale the quote and name sizes */
+        text-align: center; /* Center align text */
+    }
+
+    .countdown-container {
+        width: 90%; /* Adjust width to fit smaller screens */
+        padding: 10px;
+        margin: 0 auto; /* Center the countdown */
+        background: rgba(0, 0, 0, 0.7); /* Slightly darker background */
+    }
+
+    .weddingclockcount {
+        left: 0; /* Align clock to the center */
+        text-align: center;
     }
 }
+
