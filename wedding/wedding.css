@@ -155,55 +155,52 @@ body{
         flex-wrap: wrap;
         justify-content: center;
     }
-    
     .cards {
-        width: 90%; /* Make the card responsive */
-        height: auto; /* Allow dynamic height */
+        width: 90%; /* Adjust card width for smaller screens */
         margin: 20px auto; /* Center the card */
-        padding: 15px;
-        background-size: cover; /* Scale the background image */
-        border-radius: 10px; /* Add some rounding for a cleaner look */
-        position: relative;
-        left: 0;
-        bottom: 0;
+        padding: 15px; /* Add padding for content spacing */
+        background-size: cover; /* Ensure background scales */
+        border-radius: 10px; /* Softer rounded corners */
+        height: auto; /* Dynamic height */
     }
 
     h1 {
-        font-size: 5vw; /* Adjust header size dynamically */
-        text-align: center; /* Center the header */
+        font-size: 5vw; /* Dynamically adjust font size */
+        text-align: center;
     }
 
     .quote h3, .name h1 {
-        font-size: 4.5vw; /* Scale the quote and name sizes */
+        font-size: 4.5vw; /* Scale text size for smaller screens */
         text-align: center;
     }
 
     .countdown-container {
-        width: 95%; /* Adjust width to fit smaller screens */
-        padding: 10px;
-        margin: 0 auto; /* Center the countdown */
-        background: rgba(0, 0, 0, 0.7); /* Ensure contrast */
-        border-radius: 10px; /* Rounded edges */
+        width: 95%; /* Reduce width for small screens */
+        padding: 10px; /* Adjust padding */
+        margin: 0 auto; /* Center countdown */
+        background: rgba(0, 0, 0, 0.7); /* Slightly darker background */
+        border-radius: 10px; /* Add smooth edges */
     }
 
     .weddingclockcount {
-        text-align: center;
-        position: static; /* Remove offsets */
+        text-align: center; /* Ensure centered alignment */
     }
 
     #clock {
         display: flex;
-        flex-wrap: wrap; /* Allow the timer boxes to wrap if necessary */
-        justify-content: center; /* Center align the timer */
+        flex-wrap: wrap; /* Allow timer boxes to stack */
+        justify-content: center; /* Center the timer */
         gap: 10px; /* Add spacing between boxes */
     }
 
     .time-box span {
-        font-size: 5vw; /* Scale numbers for readability */
+        font-size: 5vw; /* Adjust font size for numbers */
     }
 
     #clock span:first-child {
-        font-size: 6vw; /* Make the primary numbers slightly larger */
-        color: #ffe600;
+        font-size: 6vw; /* Highlight larger numbers */
+        color: #ffe600; /* Keep the bold color */
     }
 }
+    
+   
