@@ -96,12 +96,14 @@ body {
 
 /* Mobile adjustments */
 @media (max-width: 480px) {
+
   body {
-      background-size: cover;
-      background-position: calc(100% - 480px) right; 
-      min-height: 100vh; /* Ensure full height on smaller screens */
-      overflow-x: hidden;
-  }
+    background-size: cover;
+    background-position: calc(100% - 150px) center; /* Shift background left to reveal the right side */
+    min-height: 100vh; /* Ensure full height on smaller screens */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative; /* Needed for positioning children */
+}
   .topbarright {
       position: static;
       margin-bottom: 10px;
@@ -120,10 +122,15 @@ body {
       flex-wrap: wrap;
       justify-content: center;
   }
-  .adi{
+  .adi {
+    position: absolute; /* Anchor to bottom */
+    bottom: 10px; /* Place slightly above the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Align perfectly in the center */
+    font-size: 18px; /* Smaller font for mobile screens */
+    color: rgb(17, 16, 63);
     text-align: center;
-    position: relative;
-    bottom:5%;
-  }
+}
+
 
 }
