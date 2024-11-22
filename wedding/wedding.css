@@ -156,11 +156,8 @@ body{
         justify-content: center;
     }
     .cards {
-        width: 90%; /* Adjust card width for smaller screens */
-        margin: 20px auto; /* Center the card */
-        padding: 15px; /* Add padding for content spacing */
+       background-image: url();
         background-size: cover; /* Ensure background scales */
-        border-radius: 10px; /* Softer rounded corners */
         height: auto; /* Dynamic height */
     }
 

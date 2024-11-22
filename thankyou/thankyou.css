@@ -99,7 +99,7 @@ body {
 
   body {
     background-size: cover;
-    background-position: calc(100% + 85px) center; /* Shift background left to reveal the right side */
+    background-position: calc(100% + 90px) center; /* Shift background left to reveal the right side */
     min-height: 100vh; /* Ensure full height on smaller screens */
     overflow-x: hidden; /* Prevent horizontal scrolling */
     position: relative; /* Needed for positioning children */
@@ -124,7 +124,7 @@ body {
   }
   .adi {
     position: absolute; /* Anchor to bottom */
-    top: 710px; /* Place slightly above the bottom */
+    top: 720px; /* Place slightly above the bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Align perfectly in the center */
     font-size: 18px; /* Smaller font for mobile screens */
