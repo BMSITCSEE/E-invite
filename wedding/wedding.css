@@ -157,9 +157,10 @@ body{
     }
     .cards {
         height: 700px;
-        width: 300px;
+        width: 500px;
        background-image: url(weddingbg3.jpeg);
         background-size: cover; /* Ensure background scales */
+        left:0;
     
     }
 
@@ -183,6 +184,7 @@ body{
 
     .weddingclockcount {
         text-align: center; /* Ensure centered alignment */
+        left:0;
     }
 
     #clock {
