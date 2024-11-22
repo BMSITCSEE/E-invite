@@ -6,7 +6,6 @@ body {
   background-position: center; /* Center aligns the background */
   background-repeat: no-repeat;
   text-align: center;
-  overflow-x: hidden;
   min-height: 100vh;
 }
 
@@ -99,8 +98,9 @@ body {
 @media (max-width: 480px) {
   body {
       background-size: cover;
-      background-position: calc(100% + 30px) center; 
+      background-position: calc(100% + 15px) center; 
       min-height: 100vh; /* Ensure full height on smaller screens */
+      overflow-x: hidden;
   }
   .topbarright {
       position: static;
@@ -120,7 +120,10 @@ body {
       flex-wrap: wrap;
       justify-content: center;
   }
-  adi{
+  .adi{
     text-align: center;
+    position: relative;
+    bottom:5%;
   }
+
 }
