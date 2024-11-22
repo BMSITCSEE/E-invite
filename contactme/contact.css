@@ -190,15 +190,14 @@ text-align: center;
         .address, .sendmesg {
             position: relative;
             width: 75%; /* Adjust width to fit smaller screens */
-            margin: 5px ;
-            padding :0;
+            margin: 0 ;
+            padding :10px;
             text-align: center; /* Center-align the text */
             
         }
         .address{
-            position: relative;
-            right:170px;;
-            grid-column-gap: 10px;
+            left:0;
+            grid-column-gap: 5px;
             margin:0;
             padding:0;
             
