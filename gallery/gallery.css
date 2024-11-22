@@ -256,32 +256,37 @@ button.Downloadbutt:hover {
     {
         display: flex;
         flex-direction: column;
-        width:50px;
-        height:20px;
+        width:40px;
+        height:5px;
         position: relative;
         left:30px;
-        top:50px;
-        font-size: 5px;
+        top:0;
+        font-size: 2px;
     }
     .videos
     {
         display: flex;
         flex-direction: column;
-        width:50px;
-        height:30px;
+        width:40px;
+        height:10px;
         position: relative;
         left:30px;
-        top:90px;
-        font-size: 5px;
+        top:20px;
+        font-size: 2px;
     }
       .heading h1 {
         font-size: 20px; /* Adjust heading size */
       }
     
+     
+
       button {
         font-size: 14px; /* Adjust button font size */
         padding: 8px 16px;
-      }
-
-    
+        margin: 5px 0; /* Add space between buttons */
+        border: none;
+        background-color: #290e0e; /* Adjust button color */
+        color: #fff;
+        border-radius: 5px; /* Rounded corners for buttons */
+    }
 }
