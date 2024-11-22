@@ -142,61 +142,68 @@ body{
     }
 
     .topbarright {
-        position: absolute; /* Change from static to absolute */
-        right: 2%;
-        margin-bottom: 0px;
-        text-align: right; /* Align to the right */
+        position: static;
+        margin-bottom: 10px;
+        text-align: center;
     }
-
     .topbar {
-        flex-direction: row; /* Maintain row direction for consistency */
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 5px;
     }
-
     .topbarleft {
-        flex-wrap: nowrap; /* Prevent excessive wrapping */
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    [type=button] {
-        margin-left: 5px;
-        margin-right: 5px;
-        padding: 10px;
-        font-size: 3vw; /* Scale button text size for smaller screens */
-    }
-
+    
     .cards {
-        width: 100%; /* Make the card responsive */
+        width: 90%; /* Make the card responsive */
         height: auto; /* Allow dynamic height */
+        margin: 20px auto; /* Center the card */
+        padding: 15px;
+        background-size: cover; /* Scale the background image */
+        border-radius: 10px; /* Add some rounding for a cleaner look */
         position: relative;
-        left: 0; /* Center the card */
+        left: 0;
         bottom: 0;
-        margin: 20px auto; /* Center the card with margin */
-        background-size: contain; /* Ensure proper scaling of the background image */
     }
 
     h1 {
-        font-size: 5vw; /* Adjust font size dynamically */
-        text-align: center; /* Center the header text */
+        font-size: 5vw; /* Adjust header size dynamically */
+        text-align: center; /* Center the header */
     }
 
     .quote h3, .name h1 {
         font-size: 4.5vw; /* Scale the quote and name sizes */
-        text-align: center; /* Center align text */
+        text-align: center;
     }
 
     .countdown-container {
-        width: 90%; /* Adjust width to fit smaller screens */
+        width: 95%; /* Adjust width to fit smaller screens */
         padding: 10px;
         margin: 0 auto; /* Center the countdown */
-        background: rgba(0, 0, 0, 0.7); /* Slightly darker background */
+        background: rgba(0, 0, 0, 0.7); /* Ensure contrast */
+        border-radius: 10px; /* Rounded edges */
     }
 
     .weddingclockcount {
-        left: 0; /* Align clock to the center */
         text-align: center;
+        position: static; /* Remove offsets */
+    }
+
+    #clock {
+        display: flex;
+        flex-wrap: wrap; /* Allow the timer boxes to wrap if necessary */
+        justify-content: center; /* Center align the timer */
+        gap: 10px; /* Add spacing between boxes */
+    }
+
+    .time-box span {
+        font-size: 5vw; /* Scale numbers for readability */
+    }
+
+    #clock span:first-child {
+        font-size: 6vw; /* Make the primary numbers slightly larger */
+        color: #ffe600;
     }
 }
-
