@@ -250,26 +250,21 @@ button.Downloadbutt:hover {
         background-size: contain; /* Ensure the background scales properly */
         padding: 10px; /* Add some padding for spacing */
     }
-    .photos,
-    .videos {
-        display: flex;
-        flex-direction: column;
-        width: auto; /* Allow dynamic resizing */
-        margin-left: 10px; /* Adjust left alignment */
-        height: auto;
-    }
-
-    .View,
-    .Download {
-        margin-left: 0; /* Align buttons with gallery */
-        padding: 10px 0; /* Adjust spacing for smaller screens */
-    }
-
-    button.Viewbutt,
-    button.Downloadbutt {
-        width: 90%; /* Make buttons responsive */
-        margin: 10px auto; /* Center buttons within their containers */
-    }
+    
+    
+      .photos, .videos {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 20px;
+      }
+    
+      .heading h1 {
+        font-size: 20px; /* Adjust heading size */
+      }
+    
+      button {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 16px;
+      }
 
     
 }

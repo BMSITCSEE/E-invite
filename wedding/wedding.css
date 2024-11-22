@@ -157,7 +157,7 @@ body{
     }
     .cards {
         height: 700px;
-        width: 350px;
+        width: 400px;
        background-image: url(weddingbg3.jpeg);
         background-size: cover; /* Ensure background scales */
         left:0;
@@ -169,10 +169,6 @@ body{
         text-align: center;
     }
 
-    .quote h3, .name h1 {
-        font-size: 4.5vw; /* Scale text size for smaller screens */
-        text-align: center;
-    }
 
     .countdown-container {
         width: 95%; /* Reduce width for small screens */
@@ -181,7 +177,7 @@ body{
         background: rgba(0, 0, 0, 0.7); /* Slightly darker background */
         border-radius: 10px; /* Add smooth edges */
     }
-     h1{
+     .countdown-container h1{
         text-align: center;
     }
 
