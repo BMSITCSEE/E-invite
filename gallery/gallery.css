@@ -249,6 +249,7 @@ button.Downloadbutt:hover {
         background-repeat: no-repeat;
         background-size: contain; /* Ensure the background scales properly */
         padding: 10px; /* Add some padding for spacing */
+        gap:20px;
     }
     
     
@@ -259,8 +260,8 @@ button.Downloadbutt:hover {
         width:40px;
         height:5px;
         position: relative;
-        left:30px;
-        top:20px;
+        left:25px;
+        top:30px;
         font-size: 2px;
     }
     .videos
@@ -271,7 +272,7 @@ button.Downloadbutt:hover {
         height:10px;
         position: relative;
         left:30px;
-        top:80px;
+        top:120px;
         font-size: 2px;
     }
       .heading h1 {
@@ -283,7 +284,7 @@ button.Downloadbutt:hover {
       button {
         font-size: 14px; /* Adjust button font size */
         padding: 8px 16px;
-        margin: 1px 0; /* Add space between buttons */
+        margin: 8px 0; /* Add space between buttons */
         border: none;
         background-color: #290e0e; /* Adjust button color */
         color: #fff;
