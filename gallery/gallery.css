@@ -278,7 +278,7 @@ button.Downloadbutt:hover {
       .heading h1 {
         
             position: absolute; /* Anchor to bottom */
-            top: 120px; /* Place slightly above the bottom */
+            top: 160px; /* Place slightly above the bottom */
             font-size: 18px; /* Smaller font for mobile screens */
        
       }
@@ -287,8 +287,8 @@ button.Downloadbutt:hover {
 
       button {
         font-size: 14px; /* Adjust button font size */
-        padding: 8px 16px;
-        margin: 8px 0; /* Add space between buttons */
+        padding: 4px 16px;
+        margin: 2px 0; /* Add space between buttons */
         border: none;
         background-color: #290e0e; /* Adjust button color */
         color: #fff;
@@ -297,12 +297,12 @@ button.Downloadbutt:hover {
     button.Downloadbutt 
     {
         position: relative;
-        bottom: 50px;
+        bottom: 10px;
     }
 
     button.Viewbutt 
     {
         position: relative;
-        top:30px;
+        top:10px;
     }
 }
