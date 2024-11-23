@@ -275,11 +275,11 @@ button.Downloadbutt:hover {
         top:170px;
         font-size: 2px;
     }
-      .videos .heading h1 {
+     /* .videos .heading h1 {
         
-            position: absolute; /* Anchor to bottom */
-            top: 170px; /* Place slightly above the bottom */
-            font-size: 18px; /* Smaller font for mobile screens */
+            position: absolute; /* Anchor to bottom 
+            top: 170px; /* Place slightly above the bottom 
+            font-size: 18px; /* Smaller font for mobile screens 
        
       }
       .photos .heading h1 {
@@ -287,7 +287,7 @@ button.Downloadbutt:hover {
         bottom: 70px;
         font-size: 18px;
 
-      }
+      }*/
     
      
 
